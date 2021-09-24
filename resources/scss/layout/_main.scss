@@ -1,0 +1,305 @@
+.main {
+    width: 100%;
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $xl) {
+        flex-direction: column;
+        padding: 81px 0 0 0;
+    }
+
+    &__user {
+        width: 22.97%;
+        background-color: $bg-div;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        @media (max-width: $xl) {
+            width: 100%;
+            max-width: 327px;
+            margin: 0 auto 24px;
+        }
+    }
+
+    &__user-info {
+        background-color: $blue;
+        border-radius: 15px;
+        padding: 37px 0 80px 32px;
+        @media (max-width: $xl) {
+            padding: 35px 0 34px 32px;
+            display: flex;
+        }
+    }
+
+    &__user-img {
+        width: 78px;
+        height: 78px;
+        margin-bottom: 43px;
+        @media (max-width: $xl) {
+            margin-bottom: 0;
+            margin-right: 20px;
+            width: 64px;
+            height: 64px;
+        }
+    }
+    &__user-text {
+        @media (max-width: $xl) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    &__report {
+        font-style: normal;
+        font-weight: normal;
+        font-size: rem(15);
+        line-height: rem(18);
+        color: $soft-blue;
+        margin-bottom: 3px;
+        @media (max-width: $xl) {
+            margin-bottom: 4px;
+        }
+    }
+
+    &__user-name {
+        font-style: normal;
+        font-weight: 300;
+        font-size: rem(40);
+        line-height: rem(47);
+        color: $white;
+        @media (max-width: $xl) {
+            font-size: rem(24);
+            line-height: rem(28);
+        }
+    }
+
+    &__buttons {
+        padding: 26px 0 32px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @media (max-width: $xl) {
+            flex-direction: row;
+            padding: 24px 0 25px 0;
+        }
+    }
+
+    &__btn-inside {
+        margin-bottom: 21px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @media (max-width: $xl) {
+            margin-bottom: 0;
+            width: calc(100% / 3);
+            text-align: center;
+        }
+    }
+    &__btn {
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-style: normal;
+        font-weight: normal;
+        font-size: rem(18);
+        line-height: rem(21);
+        color: $medium-blue;
+        cursor: pointer;
+        &:hover {
+            color: $white;
+        }
+        @media (max-width: $xl) {
+            text-align: center;
+        }
+    }
+
+    &__user-activities {
+        width: 74.32%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-radius: 15px;
+        @media (max-width: $xl) {
+            width: 100%;
+            max-width: 825px;
+            margin: 0 auto;
+        }
+        @media (max-width: $lg) {
+            max-width: 540px;
+            margin-bottom: 81px;
+        }
+        @media (max-width: $md) {
+            width: 100%;
+            max-width: 327px;
+            margin: 0 auto 81px;
+            flex-direction: column;
+        }
+    }
+
+    &__card {
+        position: relative;
+        width: 30.9%;
+        border-radius: 15px;
+        &:nth-last-child(-n + 3) {
+            align-self: flex-end;
+        }
+        @media (max-width: $xl) {
+            margin-top: 30px;
+        }
+        @media (max-width: $lg) {
+            width: 47.22%;
+        }
+        @media (max-width: $md) {
+            width: 100%;
+            margin-bottom: 24px;
+            margin-top: 0px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__card-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 15px;
+        height: 160px;
+        @media (max-width: $md) {
+            height: 140px;
+        }
+        &--work {
+            background-color: $orange-bg;
+            background-image: url(../../images/icon-work.svg);
+            background-size: 78px 78px;
+            background-repeat: no-repeat;
+            background-position: right 17.42px top -10.91px;
+        }
+
+        &--play {
+            background-color: $light-blue-bg;
+            background-image: url(../../images/icon-play.svg);
+            background-size: 90px 90px;
+            background-repeat: no-repeat;
+            background-position: right 11px top -14.4px;
+        }
+
+        &--study {
+            background-color: $pink-bg;
+            background-image: url(../../images/icon-study.svg);
+            background-size: 78px 78px;
+            background-repeat: no-repeat;
+            background-position: right 17.07px top -6.05px;
+        }
+
+        &--exercise {
+            background-color: $green-bg;
+            background-image: url(../../images/icon-exercise.svg);
+            background-size: 79.65px 53.48px;
+            background-repeat: no-repeat;
+            background-position: right 17.62px top 0.42px;
+        }
+
+        &--social {
+            background-color: $purple-bg;
+            background-image: url(../../images/icon-social.svg);
+            background-size: 73.6px 100px;
+            background-repeat: no-repeat;
+            background-position: right 13.48px top -15px;
+        }
+
+        &--self-care {
+            background-color: $yellow-bg;
+            background-image: url(../../images/icon-self-care.svg);
+            background-size: 72px 66px;
+            background-repeat: no-repeat;
+            background-position: right 7.21px top -18.79px;
+        }
+    }
+
+    &__card-bottom {
+        position: relative;
+        width: 100%;
+        border-radius: 15px;
+        background-color: $bg-div;
+        margin-top: 45px;
+        padding: 29px 30px 32px 30px;
+        cursor: pointer;
+        &:hover {
+            background-color: $hover-bg;
+        }
+        @media (max-width: $md) {
+            margin-top: 38px;
+            padding: 28px 24px;
+        }
+    }
+
+    &__activitie-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+        @media (max-width: $md) {
+            margin-bottom: 6px;
+        }
+    }
+
+    &__activitie-name {
+        font-style: normal;
+        font-weight: 500;
+        font-size: rem(18);
+        line-height: rem(22);
+        color: $white;
+    }
+
+    &__activitie-btn {
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    &__ellipsis-img {
+        width: 21px;
+        height: 5px;
+        cursor: pointer;
+        &:hover {
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    &__activitie-time {
+        @media (max-width: $md) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__heading-time {
+        font-style: normal;
+        font-weight: 300;
+        font-size: rem(56);
+        line-height: rem(66);
+        color: $white;
+        margin-bottom: 8px;
+        @media (max-width: $md) {
+            font-size: rem(32);
+            line-height: rem(38);
+            margin-bottom: 0px;
+        }
+    }
+
+    &__result-text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: rem(15);
+        line-height: rem(18);
+        color: $soft-blue;
+    }
+}
+
+.active {
+    color: $white;
+}
