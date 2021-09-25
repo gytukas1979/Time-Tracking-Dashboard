@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://time-tracking-dashboard-rho.vercel.app/](https://your-live-site-url.com)
+- Live Site URL: [Link](https://time-tracking-dashboard-rho.vercel.app/)
 
 ## My process
 
